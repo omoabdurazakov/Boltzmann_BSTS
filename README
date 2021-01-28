@@ -1,0 +1,5 @@
+The code "Boltzmann_BSTS.cc" computes the electron/phonon distributions as a function of time in the output files f.dat / n.dat.
+
+The script "evolution_without_band_escape.py" plots the time evolution of electron density from a hot initial distribution toward thermal equilibrium with the lattice phonons. It also extracts/plots the transient electron/lattice temperature. 
+
+The script "extract_decay_rates.py" extracts/plots the electron decay rates as a function of energy. To be able to extract the rates, set G_escape = 0.005 or higher and f_init = 0.02 or lower. Otherwise, electron populations at the band bottom do not decay but rise. To study the temperature dependence of the decay rates, please run the code for different lattice temperatures by changing phonon_T. 
